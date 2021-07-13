@@ -1,0 +1,22 @@
+
+h1 {
+    color:red;		}
+
+img {
+
+    width: 400px;
+}	
+
+#thirdDiv {
+
+    height: 600px;
+    width: 500px;
+    background-color: rgb(15, 14, 14);
+    padding: 50px ;
+    border : 2px dashed rgb(187, 42, 42) ;
+
+}
+#spanId{
+    font-size: 18px;
+    margin: 50px;
+}

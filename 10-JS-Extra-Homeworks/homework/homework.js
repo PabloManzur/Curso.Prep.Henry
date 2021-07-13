@@ -1,7 +1,9 @@
 // No cambies los nombres de las funciones.
 
+
 function deObjetoAmatriz(objeto){
-  // Escribe una función que convierta un objeto en una matriz, donde cada elemento representa 
+  // Escribe una función que convierta un objeto en una matriz, donde cada
+  // elemento representa 
   // un par clave-valor en forma de matriz.
   //Ejemplo: 
   /*objeto({
@@ -10,6 +12,11 @@ function deObjetoAmatriz(objeto){
       C: 3
     }) ➞ [["D", 1], ["B", 2], ["C", 3]]*/
   //Escribe tu código aquí
+
+
+  let  nuevaMatriz  = Object.entries(objeto);
+    return nuevaMatriz ;
+
 }
 
 
@@ -18,7 +25,21 @@ function numberOfCharacters(string) {
   //en formato par clave-valor.
   //Ej: Recibe ---> "adsjfdsfsfjsdjfhacabcsbajda" || Devuelve ---> { a: 5, b: 2, c: 2, d: 4, f: 4, h:1, j: 4, s: 5 } 
   //Escribe tu código aquí
+
+    var stringToArray = string.split ('')
+    console.log (stringToArray)
+    var contador = {}
+    for ( var i = 0; i < stringToArray.length; i++)
+
+    if (!contador [stringToArray[i]]){
+
+      contador[stringToArray[i]]=1
+    }
+    else { contador[stringToArray[i]] = contador[stringToArray[i]]+1
+    }
+
 }
+
 
 
 function capToFront(s) {
@@ -31,11 +52,20 @@ function capToFront(s) {
 
 function asAmirror(str) {
   //La función recibe una frase. 
-  //Escribe una función que tome la frase recibida y la devuelva de modo tal que se pueda leer de izquierda a derecha 
+  //Escribe una función que tome la frase recibida y la devuelva de modo tal que se pueda leer de izquierda 
+  //a derecha 
   //pero con cada una de sus palabras invertidas, como si fuera un espejo.
   //Ej: Recibe ---> "The Henry Challenge is close!" || Devuelve ---> "ehT yrneH egnellahC si !esolc"
   //Escribe tu código aquí
+
+  let  array = str.split ('')
+  let arrayReverse = array.reverse ()
+  let newString = array.join ('')
+  console.log(newString)
+
+   
 } 
+
 
 
 function capicua(numero){

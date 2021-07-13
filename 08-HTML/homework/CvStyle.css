@@ -1,0 +1,11 @@
+body {
+    background: url("Fondoo.jpg");
+    width: 600px; 
+    height: 700px;
+    background-repeat: no-repeat ;
+    background-attachment: fixed;
+    color:white;
+    
+
+
+}
